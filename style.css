@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+#calculator {
+  width: 200px;
+  padding: 10px;
+  background-color: #222;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+#display {
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  border: 1px solid #444;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  font-size: 24px;
+  border-radius: 4px;
+  background-color: #333;
+  box-sizing: border-box;
+  color: pink; /* Change display numbers to pink */
+}
+button {
+  width: 45px;
+  height: 45px;
+  margin: 5px auto;
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  background-color: #6b1e3a; /* Wine red background */
+  color: #fff; /* White numbers and operators */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #5a1530; /* Darker wine red on hover */
+}
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+button.operator {
+  background-color: #28a745; /* Green for operators */
+}
+button.operator:hover {
+  background-color: #218838;
+}
+button.clear {
+  width: calc(100% - 10px); /* Takes up full width minus padding */
+  margin: 5px auto;
+  background-color: #dc3545; /* Red background for Clear */
+  color: #fff; /* White text on clear button */
+}
+button.clear:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
